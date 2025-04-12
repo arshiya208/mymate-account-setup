@@ -1,11 +1,9 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';
-import { Google, Apple } from 'lucide-react';
+import { Chrome, Laptop, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Loader2 } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 const SignUp = () => {
@@ -74,7 +72,7 @@ const SignUp = () => {
             className="btn-google"
             disabled={isLoading}
           >
-            <Google className="mr-2 h-5 w-5" />
+            <Chrome className="mr-2 h-5 w-5" />
             Continue with Google
           </button>
           
@@ -83,7 +81,7 @@ const SignUp = () => {
             className="btn-apple"
             disabled={isLoading}
           >
-            <Apple className="mr-2 h-5 w-5" />
+            <Laptop className="mr-2 h-5 w-5" />
             Continue with Apple
           </button>
           
