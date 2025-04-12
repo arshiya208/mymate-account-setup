@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +98,28 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-poppins;
+  }
+  
+  /* Custom button styles */
+  .btn-rounded {
+    @apply rounded-full py-3 px-4 w-full flex items-center justify-center font-medium text-base transition-all;
+  }
+  
+  .btn-google {
+    @apply btn-rounded bg-mymate-google text-white hover:bg-mymate-google/90;
+  }
+  
+  .btn-apple {
+    @apply btn-rounded bg-mymate-apple text-white hover:bg-mymate-apple/90;
+  }
+  
+  .btn-primary {
+    @apply btn-rounded bg-mymate-secondary text-white hover:bg-mymate-secondary/90;
+  }
+  
+  /* Form input styles */
+  .form-input {
+    @apply w-full px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-mymate-accent;
   }
 }
